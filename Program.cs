@@ -30,8 +30,12 @@ namespace LineComparison{
             Console.WriteLine("Enter Y2: ");
             y2 = Convert.ToDouble(Console.ReadLine());
             Line line2 = new Line(x1, y1, x2, y2);
-            LineComapre obj = new LineComapre();
-            obj.linecheck(line1,line2);
+            
+            LineComparisonClass obj = new LineComparisonClass();
+            obj.Linelegth(line1);
+            obj.CompareLine(line1,line2);
+            obj.CheckLine(line1,line2);
+
 
             
            
